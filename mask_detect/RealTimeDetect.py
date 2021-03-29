@@ -16,6 +16,7 @@ while True:
     ret, cam = cap.read()
     if ret is None:
         print("Video Load Failed")
+   #영상의 크기를 가져온다. 
     h, w = cam.shape[:2]
     cv2.namedWindow('camera', cv2.WINDOW_AUTOSIZE)
     cv2.imshow('camera', cam)
