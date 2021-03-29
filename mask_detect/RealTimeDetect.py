@@ -6,7 +6,7 @@ import numpy as np
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] ='2'
 
-facenet = cv2.dnn.readNet('models/deploy.prototxt', 'models/res10_300x300_ssd_iter_140000.caffemodel')
+facenet = cv2.dnn.readNet('models/deploy.prototxt', 'models/res10_300x300_ssd_iter_140000.caffemodel') #미리 학습된 모델을 가져온다.
 model = load_model('models/mask_detector.model')
 
 #노트북에 내장된 카메라 사용
